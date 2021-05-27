@@ -85,7 +85,7 @@ function TodoForm({ addTodo, deleteTodoAll }) {
         }
           
        </form>
-       <button 
+       {/* <button 
            class="bg-green-500 text-white active:bg-green-600 font-bold uppercase text-xs px-4 py-2 rounded-full shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" 
            type="submit" 
            value={todo.item}
@@ -93,7 +93,7 @@ function TodoForm({ addTodo, deleteTodoAll }) {
            handleDeleteAll={handleDeleteAll}
            deleteTodoAll={deleteTodoAll}> 
            Delete All
-           </button>
+           </button> */}
         </div>
        
     )
