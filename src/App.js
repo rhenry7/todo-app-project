@@ -3,6 +3,9 @@ import "./App.css";
 import Input from "./components/Input";
 import TodoForm from "./components/TodoForm";
 import TodoList from "./components/TodoList";
+import Navbar from "./components/Navbar";
+
+import Plant from "./image/plant";
 
 const localStoragekey = "cloud-todo-list-todos";
 
@@ -61,9 +64,15 @@ function App() {
 
   return (
     <div className="App">
+    <Navbar/>
+
       <header className="App-header">
-      <div class="bg-gray-700 px-10 py-10 rounded-lg">
-      <p>Today's Todo's: {getDate()}</p>
+
+      <div class="bg-gray-100 px-10 py-10 rounded-lg">
+
+<Plant />
+      <h2 className="text-3xl py-1 text-gray-900">Manage Your Plants!</h2>
+      <p className="py-5 text-sm text-gray-900"> Today's Date: {getDate()}</p>
         <TodoForm addTodo={addTodo} />
         <TodoList
           todos={todos}

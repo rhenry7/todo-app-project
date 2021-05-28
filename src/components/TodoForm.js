@@ -67,33 +67,25 @@ function TodoForm({ addTodo, deleteTodoAll }) {
 
     return (
         <div>
-<form onSubmit={handleSubmit} className="py-3">
+<form onSubmit={handleSubmit} className="py-1">
            <input 
-           className="px-3 py-3 placeholder-blueGray-300 text-blueGray-600 relative bg-white bg-white rounded-full text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full text-gray-900 " 
+           className="px-3 py-3 mt-5 placeholder-blueGray-300 text-blueGray-600 relative bg-white bg-white rounded-full text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full text-gray-900 " 
            name="item"
            type="text"
            value={todo.item}
            onChange={handleChange}
-           placeholder="Add a new item!" />
+           placeholder="What is the name of your new plant?" />
            <button 
-           class="bg-green-500 text-white active:bg-green-600 font-bold uppercase text-xs px-4 py-2 rounded-full shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" 
+           class="bg-green-500 text-white active:bg-green-600 font-bold uppercase text-xs px-4 py-2 rounded-full shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 mt-5 ease-linear transition-all duration-150" 
            type="submit">Submit</button> 
 
 
         {
             // button below is to delete all.. 
         }
-          
+        
        </form>
-       {/* <button 
-           class="bg-green-500 text-white active:bg-green-600 font-bold uppercase text-xs px-4 py-2 rounded-full shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" 
-           type="submit" 
-           value={todo.item}
-           onChange={handleChange}
-           handleDeleteAll={handleDeleteAll}
-           deleteTodoAll={deleteTodoAll}> 
-           Delete All
-           </button> */}
+   
         </div>
        
     )

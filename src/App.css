@@ -16,7 +16,7 @@
 
 .App-header {
     font-family: 'Poppins', sans-serif;
-    background-color: #667cc6;
+    background-color: rgb(13, 158, 110);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -37,4 +37,48 @@
     to {
         transform: rotate(360deg);
     }
+}
+
+button {
+    background-color: lightgray;
+    border: 0;
+    border-radius: 50px;
+    cursor: pointer;
+    height: 50px;
+    position: relative;
+    width: 100px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+button:hover {
+    background-color: lightgray;
+}
+
+button:focus,
+button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+    border: 0;
+}
+
+.pin {
+    background-color: white;
+    border-radius: 98px;
+    height: 44px;
+    left: 4px;
+    position: absolute;
+    top: 3px;
+    width: 48px;
+    transition: left ease .5s;
+}
+
+button.on {
+    background-color: rgb(110, 210, 145);
+}
+
+button.on .pin {
+    left: 48px;
 }
