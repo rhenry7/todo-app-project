@@ -28,7 +28,7 @@ function TodoForm({ addTodo, deleteTodoAll }) {
         e.preventDefault();
         // if field is empty, display an alert to enter information
         if (todo.item === ""){
-            return alert("Please enter a new item. Input is currently empty")
+            return alert("Input is currently empty, enter the name of your plant.")
         } else {
             addTodo({...todo, id: uuid() });
             // reset todo 
@@ -76,7 +76,7 @@ function TodoForm({ addTodo, deleteTodoAll }) {
            onChange={handleChange}
            placeholder="What is the name of your new plant?" />
            <button 
-           class="bg-green-500 text-white active:bg-green-600 font-bold uppercase text-xs px-4 py-2 rounded-full shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 mt-5 ease-linear transition-all duration-150" 
+           class="bg-green-500 text-white active:bg-green-600 font-bold uppercase text-xs px-4 py-2 rounded-full shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-5 mt-5 ease-linear transition-all duration-150" 
            type="submit">Submit</button> 
 
 

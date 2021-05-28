@@ -4,7 +4,7 @@ import React from 'react'
 function plant() {
     return (
         <div>
-                  <svg id="emoji" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+                  {/* <svg id="emoji" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
   <g id="color">
     <path fill="#f4aa41" d="M42.2688,60.9583H28.6752a.83.83,0,0,1-.8187-.6964l-2.4489-15.05a.8291.8291,0,0,1,.686-.9515c.4526-.0737,18.3067-.0745,18.7569,0a.8291.8291,0,0,1,.6859.9515L43.0876,60.2619A.83.83,0,0,1,42.2688,60.9583Z"/>
     <path fill="#ea5a47" d="M47.7634,45.9079H23.1806a.8288.8288,0,0,1-.8292-.8293V39.9314a.8288.8288,0,0,1,.8292-.8292H47.7634a.8288.8288,0,0,1,.8293.8292v5.1472A.8288.8288,0,0,1,47.7634,45.9079Z"/>
@@ -23,7 +23,7 @@ function plant() {
     <path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M35.2122,30.3226c3.4659-6.4211,19.5492-7.9037,19.5492-7.9037s-3.2069-5.12-9.9567-2.7906"/>
     <path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M35.4193,29.7723C35.1153,21.6311,49.5322,12.01,49.5322,12.01A8.7847,8.7847,0,0,0,38.534,14.2782a12.9636,12.9636,0,0,0-2.6366,4.8407"/>
   </g>
-</svg>
+</svg> */}
         </div>
     )
 }
